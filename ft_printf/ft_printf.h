@@ -6,7 +6,7 @@
 /*   By: vodebunm <vodebunm@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 03:07:54 by vodebunm          #+#    #+#             */
-/*   Updated: 2024/02/18 05:46:50 by vodebunm         ###   ########.fr       */
+/*   Updated: 2024/02/18 06:40:09 by vodebunm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,6 @@ int		ft_calculate_digit_base(size_t n, int num);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 size_t	ft_strlen(const char *s);
+int		ft_pointer(va_list list);
 
 #endif

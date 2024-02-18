@@ -6,7 +6,7 @@
 /*   By: vodebunm <vodebunm@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/05 21:01:43 by vodebunm          #+#    #+#             */
-/*   Updated: 2024/02/16 23:29:43 by vodebunm         ###   ########.fr       */
+/*   Updated: 2024/02/18 06:37:15 by vodebunm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_conversion_specifier(const char c, va_list list, int *i)
 	if (c == 'i' || c == 'd')
 		return (ft_int_dec_number_print(va_arg(list, int)));
 	if (c == 'p')
-		return (ft_pointer_printf(va_arg(list, unsigned int), c));
+		return (ft_pointer(list));
 	if (c == 'u')
 		return (ft_int_dec_number_print(va_arg(list, unsigned int)));
 	if (c == 'x')

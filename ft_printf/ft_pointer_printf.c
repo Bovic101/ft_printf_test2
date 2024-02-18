@@ -6,7 +6,7 @@
 /*   By: vodebunm <vodebunm@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 03:19:54 by vodebunm          #+#    #+#             */
-/*   Updated: 2024/02/18 06:03:45 by vodebunm         ###   ########.fr       */
+/*   Updated: 2024/02/18 06:27:47 by vodebunm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,6 @@ int	ft_pointer_printf(size_t n, char c)
 	int	counter;
 
 	counter = 0;
-	if (c == 'p')
-	{
-		ft_putstr_fd("0x", 1);
-		counter += 2;
-		c = 'x';
-	}
 	if (n >= 16)
 	{
 		counter += ft_pointer_printf(n / 16, c);
