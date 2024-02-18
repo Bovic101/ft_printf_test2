@@ -6,7 +6,7 @@
 /*   By: vodebunm <vodebunm@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/05 21:01:43 by vodebunm          #+#    #+#             */
-/*   Updated: 2024/02/18 06:37:15 by vodebunm         ###   ########.fr       */
+/*   Updated: 2024/02/18 07:07:54 by vodebunm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,9 @@ int	ft_conversion_specifier(const char c, va_list list, int *i)
 		return (ft_pointer_printf(va_arg(list, unsigned int), c));
 	if (c == '%')
 		return (ft_characater_printf(c));
-	if (!c)
+	if (c == '\0')
 		return (0);
-	else
+	if (i != NULL)
 		*i = *i - 1;
 	return (0);
 }
